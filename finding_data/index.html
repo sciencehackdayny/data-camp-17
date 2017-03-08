@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Finding Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <aside>
+      <div class="logo">
+        <a href="http://sciencehackdayny.github.io/data-camp-16/" title="Space Apps - Data">
+          <img src="../assets/images/science-fox_naranja.svg"/>
+        </a>
+      </div>
+      <nav>
+        <a class="selected" href="#introduction">Introduction</a>
+        <a href="#steps-to-complete">Steps to Complete</a>
+        <a href="#glossary">Glossary</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </aside>
+
+    <article>
+      <div class="logo">
+        <a href="https://mozillascience.org" title="Mozilla Science Lab">
+          <img src="../assets/images/science-lab-logo.svg" />
+        </a>
+      </div>
+
+      <h1>Finding Data + Data Reuse</h1>
+
+      <div class="meta-information">
+        <p class="summary">
+          This activity is designed to help you research open data and learn more about data reuse.
+        </p>
+        <div class="details">
+          <time>30-45 minutes</time>
+          <p class="difficulty">For beginners</p>
+        </div>
+      </div>
+
+      <section class="track-details">
+        <section>
+          <h4>Format</h4>
+          <p>
+            This is a short writing/thinking exercise.  Best done with a partner
+            or small group, but can also be done alone.
+          </p>
+        </section>
+
+        <section>
+          <h4>Target Audience</h4>
+          <p>
+            Project leads looking great for data with open licenses.
+          </p>
+        </section>
+
+        <section>
+          <h4>Materials</h4>
+          <ul>
+            <li>Pen/pencil &amp; paper or text editor</li>
+            <li><a href="https://github.com/mozillascience/working-open-workshop/blob/gh-pages/handouts/data_reuse_plan_template.md">
+            Data Reuse Plan Template</a></li>
+          </ul>
+        </section>
+      </section>
+
+      <h2 id="introduction">Introduction</h2>
+
+      <p>
+        Data reuse saves time and accelerates the pace of scientific discovery, so investigating how to put together existing data sets is totally a worthwhile effort.
+      </p>
+
+      <p>
+        This exercise will walk you through some open data sources and some templates for assessing and documenting the data you collect/use.
+      </p>
+
+      <h2 id="steps-to-complete">Steps to Complete</h2>
+
+      <ol class="steps">
+        <!-- Step 1 -->
+        <li>
+          <h1>Browse Data Repos</h1>
+          <time>5 minutes</time>
+          <p>
+            Break into groups of 2-5 people. Take a look a the following open data resources and consider the type of data you might like to work with; keep in mind data formats and licenses before you pick your data
+          </p>
+
+          <h3>Data Sets/APIs</h3>
+
+          <ol>
+            <li><a href="https://data.nasa.gov/">NASA Data</a>: choice datasets for space scientists</li>
+            <li><a href="https://github.com/caesar0301/awesome-public-datasets">Compendium of Awesome Public Datasets</a>: great datasets themed by discipline and domain</li>
+            <li><a href="https://github.com/toddmotto/public-apis">Index of Public APIs</a>: awesome opensource listing</li>
+            <li><a href="https://developer.forecast.io/docs/v2">Forecast.io API</a>: well-structured API for global weather information</li>
+            <li><a href="http://personifyjs.github.io/">Personify JS</a>: a JS library for using IBM Watson and Twitter/Social APIs</li>
+            <li><a href="http://fourthof5.com/audio-visualisation-with-the-web-audio-api#show-last-Point">Web Audio API</a>: tutorial for leveraging web audio, if that's your jam</li>
+            <li><a href="https://www.quandl.com/">Quandl</a>: the "wikipedia" of time-series data, they provide datasets and format parsers for conversion to what you need</li>
+            <li><a href="http://www.data.gov/">Data.gov</a>: almost every government/city has an "open data portal" intiative where you can download data of interest to you, and search through for differnt formats</li>
+            <li><a href="https://etherpad.mozilla.org/fed-data">Federal Data Listing Etherpad</a>: loads of federal data resources for the taking</li>
+            <li><a href="http://enigma.io/">Enigma.io</a>: loads more open data, larger datasets, and tools for correlating multple datasets</li>
+            <li><a href="https://exversion.com/">Exversion</a>: similar data catalog, they also have a fabulous newsletter (subscribe for cool datasets in your inbox)</li>
+            <li><a href="https://nycopendata.socrata.com/">NYC Open Data</a>: loads of cities have "socrata" portals where you can download data</li>
+            <li><a href="https://www.ire.org/nicar/database-library/">IRE Database Library</a>: IRE also provides a lot of open data to investigative journos, along with data dictionaries telling you how to read it</li>
+
+          </ol>
+
+          <h3>Tools to Convert Data</h3>
+          <ol>
+            <li><a href="https://shancarter.github.io/mr-data-converter/">Mr. Data Converter</a>: an online tool for converting data from excel to other formats (HTML/JSON/XML)</li>
+            <li><a href="http://openrefine.org/">Open Refine</a>:not unlike excel but way more powerful for large datasets, you can also convert formats in refine (ie. from JSON to CSV or vice-versa)</li>
+            <li><a href="https://github.com/d3/d3-dsv">DSV</a>: a parser and formatter for delimiter-separated values</li>
+            <li><a href="http://tabula.technology/">Tabula</a>:  tool for extracting data from PDFs</li>
+          </ol>
+
+
+          <p>
+            Identify a note taker or yourself who can flag datasets you like and start looking into using them for your project.
+          </p>
+        </li>
+
+        <!-- Step 2 -->
+        <li>
+          <h1>Interview your data</h1>
+          <time>20-30 minutes</time>
+          <p>
+            Using the <a href="https://github.com/mozillascience/working-open-workshop/blob/gh-pages/handouts/data_reuse_plan_template.md">
+            Data Reuse Plan Template</a> as a guide, members of the group ask questions
+            of about these data sets while the note taker records responses.
+            The note taker can (and is encouraged) to ask questions too.  As you ask questions,
+            think about how you would (or if you could) respond to a similar question about your
+            data set. The purpose of this is to investigate the origin and validity of the data and know loads about it before you start munging.
+          </p>
+        </li>
+
+        <!-- Step 4 -->
+      </ol>
+
+      <h2 id="glossary">Glossary</h2>
+      <section class="glossary">
+        <section class="term">
+          <h3>Open Data</h3>
+          <p>
+            Data that is made easily and freely available for anyone to access, use, and
+            share without restrictions, the possible exception being a requirement of
+            attribution.
+          </p>
+        </section>
+        <section class="term">
+          <h3>Metadata</h3>
+          <p>
+            Information that describes, explains, locates, or in some way makes it easier to
+            find, access, and use a resource (in this case, data). For example, metadata for
+            a photograph may include the name of the photographer, when and where it was taken,
+            as well as the type of camera and settings used to take the photograph.
+          </p>
+        </section>
+        <section class="term">
+          <h3>Licensing</h3>
+          <p>
+            A license gives explicit permissions for the use of something. This is particularly
+            important if you want to make your data open as some jurisdictions assign
+            copyrights to data sets which limit their use. There are several types of
+            licenses that are in common use for data. You can read more about them
+            here: <a href="http://www.dcc.ac.uk/resources/how-guides/license-research-data">
+            http://www.dcc.ac.uk/resources/how-guides/license-research-data</a>.
+          </p>
+        </section>
+        <section class="term">
+          <h3>Naming Conventions</h3>
+          <p>
+            These are a set of predefined rules for the naming and structure of folders, files,
+            field names, etc. (E.g. All files begin with a date, location and project name.)
+            Naming conventions help provide context to a data set, as well as make sure a
+            standard of data collection and management is being followed by all members of a
+            team.
+          </p>
+        </section>
+        <section class="term">
+          <h3>Permanent Identifiers</h3>
+          <p>
+            A permanent identifier (or PID) is a set of numbers and/or characters, frequently
+            in the form of a URL, that points to the location of a resource. PIDs are set up
+            in such a way that even though the storage location of the resource may change
+            over time (e.g. moving data from one university server to another), the PID will
+            always point to the correct location. DOI is a commonly known type of PID.
+          </p>
+        </section>
+      </section>
+
+      <h2 id="resources">Follow-up Resources &amp; Materials</h2>
+      <p>
+        You may find it useful to review this handout early on in the planning stages
+        of your project to help design the workflows of your project.
+      </p>
+      <p>
+        The following resources are useful for more information documenting your data
+        and research best practices to make documenting your data easier.
+        <ul>
+          <li>
+            <a href="http://www.ands.org.au/guides/metadata-working.html">Metadata Guide</a>
+            from Australian National Data Service (ANDS)
+          </li>
+          <li>
+            <a href="https://www.dataone.org/sites/all/documents/DataONE_BP_Primer_020212.pdf">
+            Best Practices for Data Management</a> from DataONE
+          </li>
+        </ul>
+      </p>
+
+    </article>
+  </body>
+</html>

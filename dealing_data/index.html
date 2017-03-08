@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dealing with Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/ico" href="https://mozillascience.org/img/favicon.ico">
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/javascript/script.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <aside>
+      <div class="logo">
+        <a href="http://sciencehackdayny.github.io/" title="Space Apps - Dealing Data">
+          <img src="../assets/images/science-fox_naranja.svg"/>
+        </a>
+      </div>
+      <nav>
+        <a class="selected" href="#introduction">Introduction</a>
+        <a href="#steps-to-complete">Steps to Complete</a>
+        <a href="#glossary">Glossary</a>
+        <a href="#resources">Resources</a>
+      </nav>
+    </aside>
+
+    <article>
+      <div class="logo">
+        <a href="https://mozillascience.org" title="Mozilla Science Lab">
+          <img src="../assets/images/science-lab-logo.svg" />
+        </a>
+      </div>
+
+      <h1>Dealing with Data</h1>
+
+      <div class="meta-information">
+        <p class="summary">
+          This activity is designed to help you deal with open data and analyze, manipulate and visualize your datasets for projects
+        </p>
+        <div class="details">
+          <time>30 minutes</time>
+          <p class="difficulty">For intermediate devs</p>
+        </div>
+      </div>
+
+      <section class="track-details">
+        <section>
+          <h4>Format</h4>
+          <p>
+            This is a short reference list of resources to help you groom datasets
+          </p>
+        </section>
+
+        <section>
+          <h4>Target Audience</h4>
+          <p>
+            Project leads and contributors trying to wrangle data for a project
+          </p>
+        </section>
+
+        <section>
+          <h4>Materials</h4>
+          <ul>
+            <li>Text editor &amp; or etherpad for notes</li>
+          </ul>
+        </section>
+      </section>
+
+      <h2 id="introduction">Introduction</h2>
+
+      <p>
+        Data munging is an essential part of almost every hackathon workflow and understanding more about the formats and structure of your data will help you complete your projects
+      </p>
+
+      <p>
+        This exercise will walk you through some resources and libraries designed to help you build
+      </p>
+
+      <h2 id="steps-to-complete">Steps to Complete</h2>
+
+      <ol class="steps">
+        <!-- Step 1 -->
+        <li>
+          <h1>Brush up on formats</h1>
+          <time>10 minutes</time>
+          <p>
+            Browse the following details about file formats and data types to make sure you're familiar with the general vocabulary of some of the subsequent sections.
+          </p>
+          <h3>Formats</h3>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/JSON">JSON</a> - Javascript Object Notation, data objects made of attribute-value pairs</li>
+            <li><a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> - Comma-Separated Values, tabular data delimted by `,` s to suggest different fields, you can convert excel spreadsheets to this easily, and it can be read into your code</li>
+            <li><a href="https://en.wikipedia.org/wiki/Tab-separated_values">TSV</a> - Tab-Separated Values, same as above, but `tab` is the delimiting</li>
+            <li><a href="https://en.wikipedia.org/wiki/XML">XML</a> - eXtensible Markup Language</li>
+          </ul>
+
+          <p>You can tell the format of a file by its extension, or the letters that follow the `.` after the file name.</p>
+
+          <h3>Types</h3>
+          <ul>
+            <li><a href="https://codex.wordpress.org/Formatting_Date_and_Time">Dates</a> | Friday, September 24th, 2004</li>
+            <li><a href="https://en.wikipedia.org/wiki/Integer_(computer_science)">Integers</a> | "1"</li>
+            <li><a href="https://en.wikipedia.org/wiki/Boolean_data_type">Booleans</a> - "TRUE"</li>
+            <li><a href="https://en.wikipedia.org/wiki/Character_(computing)">Characters</a> | "a"</li>
+            <li><a href="https://en.wikipedia.org/wiki/Floating_point">Floats</a> - "1.2435"</li>
+            <li><a href="https://en.wikipedia.org/wiki/String_(computer_science)">Strings</a> - "aurelia"</li>
+            <li><a href=""></a></li>
+          </ul>
+
+          <h3>Considerations</h3>
+
+          <p>Consider what you want your project to look like, how you want your user to interact with your project, the type of data set and data formats you're relying on, and the type of visualization you'd like to make, in the end.</p>
+
+          <p>If you're wanting to get started with a dataset that is not your own, you can follow the tutorial from Michelle Minkoff at ForJournalism: <a href="http://forjournalism.github.io/courses/charting-and-visualization/">http://forjournalism.github.io/courses/charting-and-visualization/</a>.</p>
+
+
+          <!-- </ol> -->
+
+        </li>
+        
+        <!-- Step 2 -->
+        <li>
+          <h1>Check out libraries</h1>
+          <time>20-30 minutes</time>
+          <a href="datavizcatalogue.com"><img style="width:100%;height:100%" src="https://raw.githubusercontent.com/auremoser/images/master/1-vis-types.png"></a>
+
+          <h3>Tools for Data Visualization</h3>
+           <p>All are pretty customizable with CSS, so don't feel bound to their default designs.</p>
+
+            <h5>Javascript</h5>
+            <ol>
+              <li><a href="http://code.shutterstock.com/rickshaw/">Richshaw</a></li>
+              <li><a href="http://metricsgraphicsjs.org/">Metrics Graphics</a></li>
+              <li><a href="http://c3js.org/samples/timeseries.html">C3 JS</a></li>
+              <li><a href="http://www.highcharts.com/">Highcharts</a></li>
+              <li><a href="http://misoproject.com/">Miso Project</a></li>
+              <li><a href="https://github.com/mbostock/d3/wiki/Tutorials">D3 Tutorials</a></li>
+              <li><a href="https://github.com/mbostock/d3/wiki">D3 Docs</a></li>
+            </ol>
+            
+
+            <img style="width:100%;height:100%" src="https://raw.githubusercontent.com/auremoser/web-coding/master/_imgs/time/plot.jpg">
+
+            <h5>Python</h5>
+            <ol>
+              <li><a href="http://stanford.edu/~mwaskom/software/seaborn/">Seaborn</a></li>
+              <li><a href="https://plot.ly/">Plot.ly</a></li>
+              <li><a href="http://bokeh.pydata.org/en/latest/">Bokeh</a></li>
+            </ol>
+
+          <h3>Tools for Data Wrangling</h3>
+          <ol>
+            <li><a href="http://jyotiska.github.io/blog/posts/python_libraries.html">Python Data Management Libraries</a>: little index of resources</li>
+            <li><a href="https://github.com/ryanpitts/journalists-guide-datasets">Journalists' Guide to datsets</a>: nice resource for common but complex datasets</li>
+            <li><a href="https://datapatterns.readthedocs.org/en/latest/recipes/index.html">Data Wrangling Handbook</a>: features nice tutorials on how to deal with data</li>
+            <li><a href="https://github.com/d3/d3-dsv">DSV</a>: a parser and formatter for delimiter-separated values</li>
+            <li><a href="http://tabula.technology/">Tabula</a>:  tool for extracting data from PDFs</li>
+          </ol>
+        </li>
+
+        <!-- Step 3 -->
+        <li>
+          <h1>Choose an approach</h1>
+          <time>5-10 minutes</time>
+          <p>
+            Figure out what you most want to do with your data and determine which libraries or types of visulization might best suit what you're working on.
+          </p>
+          <p>
+            Consider that maybe your tool is not particularly visual, but you need to include or accept data in the formats and types described above, and plan accordingly
+          </p>
+        </li>
+
+        <!-- Step 4 -->
+      </ol>
+
+      <h2 id="glossary">Glossary</h2>
+      <section class="glossary">
+        <section class="term">
+          <h3>Open Data</h3>
+          <p>
+            Data that is made easily and freely available for anyone to access, use, and
+            share without restrictions, the possible exception being a requirement of
+            attribution.
+          </p>
+        </section>
+
+        <section class="term">
+          <h3>File Formats</h3>
+          <p>
+            A standard way that information is encoded for storage in a computer file. File formats may be either proprietary or free and may be either unpublished or open.
+          </p>
+        </section>
+      </section>
+
+      <h2 id="resources">Follow-up Resources &amp; Materials</h2>
+      <p>
+        You may find it useful test out types of visualizations before you attempt to code them. 
+      </p>
+      <p>
+        The following resources are useful for testing. 
+        <ul>
+          <li>
+            <a href="http://codepen.io/">CodePen</a>: browse lots of visualization types there
+          </li>
+          <li>
+            <a href="http://raw.densitydesign.org/">
+            RAW</a>: easy way to drag and drop data into a variety of generated D3 prototypes.
+          </li>
+          <li>
+            <a href="http://www.highcharts.com/demo">
+            Highcharts demos</a>: each has a jsfiddle where you can drop in your own data.
+          </li>
+        </ul>
+      </p>
+
+    </article>
+  </body>
+</html>
